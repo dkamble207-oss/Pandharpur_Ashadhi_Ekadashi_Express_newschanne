@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>पंढरपूर आषाढी एकादशी एक्स्प्रेस न्यूज</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f4f4;
+}
+
+.topbar{
+background:#000;
+color:#fff;
+padding:10px;
+display:flex;
+justify-content:space-between;
+}
+
+header{
+background:#8B0000;
+color:#fff;
+padding:20px;
+text-align:center;
+}
+
+nav{
+background:#222;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-weight:bold;
+}
+
+.breaking{
+background:red;
+color:white;
+padding:12px;
+font-weight:bold;
+overflow:hidden;
+}
+
+.breaking marquee{
+font-size:18px;
+}
+
+.container{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:20px;
+padding:20px;
+}
+
+.main-news,.sidebar{
+background:white;
+padding:20px;
+border-radius:10px;
+}
+
+.news-card{
+border-bottom:1px solid #ddd;
+padding:15px 0;
+}
+
+.news-card img{
+width:100%;
+border-radius:8px;
+}
+
+.ad{
+background:gold;
+padding:20px;
+text-align:center;
+margin-top:15px;
+border-radius:10px;
+font-weight:bold;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+padding:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
+.live{
+background:white;
+margin:20px;
+padding:20px;
+border-radius:10px;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+<div>📺 LIVE NEWS</div>
+<div id="clock"></div>
+</div>
+
+<header>
+<h1>📰 पंढरपूर आषाढी एकादशी एक्स्प्रेस न्यूज</h1>
+<p>वारकऱ्यांच्या सेवेसाठी - पंढरपूरच्या विकासासाठी</p>
+</header>
+
+<nav>
+<a href="#">मुख्य बातम्या</a>
+<a href="#">वारी अपडेट्स</a>
+<a href="#">मंदिर</a>
+<a href="#">वाहतूक</a>
+<a href="#">व्यवसाय</a>
+<a href="#">हवामान</a>
+<a href="#">संपर्क</a>
+</nav>
+
+<div class="breaking">
+<marquee>
+🔴 BREAKING NEWS : आषाढी वारी विशेष अपडेट्स | मंदिर दर्शन माहिती | वाहतूक बदल | स्थानिक व्यवसाय ऑफर्स
+</marquee>
+</div>
+
+<div class="container">
+
+<div class="main-news">
+
+<h2>मुख्य बातम्या</h2>
+
+<div class="news-card">
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=900">
+<h3>आषाढी वारीची तयारी अंतिम टप्प्यात</h3>
+<p>वारकऱ्यांसाठी विविध सुविधा उपलब्ध करण्यात येत आहेत.</p>
+</div>
+
+<div class="news-card">
+<img src="https://images.unsplash.com/photo-1516302752625-fcc3c50ae61f?w=900">
+<h3>वाहतूक विभागाचे नवीन मार्गदर्शन</h3>
+<p>पार्किंग आणि पर्यायी मार्गांची माहिती.</p>
+</div>
+
+</div>
+
+<div class="sidebar">
+
+<h2>जलद अपडेट्स</h2>
+
+<ul>
+<li>🛕 मंदिर दर्शन वेळा</li>
+<li>🚦 वाहतूक अपडेट्स</li>
+<li>🌦 हवामान अंदाज</li>
+<li>🏥 आरोग्य सेवा</li>
+<li>🏪 स्थानिक ऑफर्स</li>
+</ul>
+
+<div class="ad">
+आपली जाहिरात येथे द्या
+</div>
+
+</div>
+
+</div>
+
+<section class="gallery">
+<img src="https://picsum.photos/400/300?1">
+<img src="https://picsum.photos/400/300?2">
+<img src="https://picsum.photos/400/300?3">
+<img src="https://picsum.photos/400/300?4">
+</section>
+
+<div class="live">
+
+<h2>📺 Live Streaming</h2>
+
+<iframe width="100%" height="450"
+src="https://www.youtube.com/embed/live_stream?channel=YOUR_CHANNEL_ID"
+frameborder="0" allowfullscreen>
+</iframe>
+
+</div>
+
+<footer>
+<h3>पंढरपूर आषाढी एकादशी एक्स्प्रेस न्यूज</h3>
+<p>ई-मेल: info@pandharpurexpress.in</p>
+<p>मोबाईल: +91 XXXXX XXXXX</p>
+<p>© 2026 सर्व हक्क राखीव</p>
+</footer>
+
+<script>
+function updateClock(){
+const now=new Date();
+document.getElementById('clock').innerHTML=
+now.toLocaleString('mr-IN');
+}
+setInterval(updateClock,1000);
+updateClock();
+</script>
+
+</body>
+</html>
